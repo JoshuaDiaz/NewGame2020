@@ -46,6 +46,11 @@ public class BlockButt : MonoBehaviour
         gameObject.SetActive(false);
     }
 
+    public bool isActive()
+    {
+        return gameObject.activeSelf;
+    }
+
     // Update is called once per frame
     void Update()
     {

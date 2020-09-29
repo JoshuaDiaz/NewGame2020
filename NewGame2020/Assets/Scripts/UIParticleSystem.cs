@@ -70,11 +70,11 @@ namespace UnityEngine.UI.Extensions
                 if (pRenderer != null)
                     pRenderer.enabled = false;
 
-                Shader foundShader = Shader.Find("UI Extensions/Particles/Additive");
-                Material pMaterial = new Material(foundShader);
+                //Shader foundShader = Shader.Find("Assets/UI_Additive");//"UI Extensions/Particles/Additive");
+                //Material pMaterial = new Material(foundShader);
 
-                if (material == null)
-                    material = pMaterial;
+                // if (material == null)
+                //     material = pMaterial;
 
                 currentMaterial = material;
                 if (currentMaterial && currentMaterial.HasProperty("_MainTex"))

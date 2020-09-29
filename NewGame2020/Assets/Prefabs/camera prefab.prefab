@@ -330,6 +330,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 30450784e3296684b8be4cb56438ee66, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  cam: {fileID: 4334592071303468471}
   target: {fileID: 0}
-  smoothSpeed: 1
   offset: {x: 0, y: -0.7166, z: 0}
+  shiftCamToAlpacaSpeed: 15
+  shiftCamToComicSpeed: 2.5

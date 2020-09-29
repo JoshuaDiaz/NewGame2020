@@ -160,6 +160,7 @@ MonoBehaviour:
   inNeed: 1
   minigameSceneName: Levels/Level Select Menu Mobile
   comic: {fileID: 6848835073187190981}
+  boxCollider: {fileID: 6848835073264400213}
 --- !u!114 &6848835073187190981
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -269,7 +270,7 @@ Transform:
   m_GameObject: {fileID: 6848835073555764296}
   m_LocalRotation: {x: 0.23911761, y: -0.36964384, z: 0.09904577, w: 0.8923991}
   m_LocalPosition: {x: -0.006123725, y: -0.005, z: 0.0061237244}
-  m_LocalScale: {x: 2.3801434, y: 2.3801434, z: 2.3801434}
+  m_LocalScale: {x: 2.828427, y: 2.828427, z: 2.828427}
   m_Children: []
   m_Father: {fileID: 6848835073264400211}
   m_RootOrder: 0

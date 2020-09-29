@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.37311992, g: 0.38074034, b: 0.35872713, a: 1}
+  m_IndirectSpecularColor: {r: 0.37311953, g: 0.38074014, b: 0.3587274, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -4694,6 +4694,23 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6848835073187190981, guid: 9b5537656c2551f4ba0bf3a28a0e6833,
+        type: 3}
+      propertyPath: panels.Array.data[0]
+      value: 
+      objectReference: {fileID: 21300000, guid: 99dd130cf331cf340b3d8a7d81e865db,
+        type: 3}
+    - target: {fileID: 6848835073187190981, guid: 9b5537656c2551f4ba0bf3a28a0e6833,
+        type: 3}
+      propertyPath: panels.Array.data[1]
+      value: 
+      objectReference: {fileID: 21300000, guid: 5b7e375e1b6eb714288629a847971008,
+        type: 3}
+    - target: {fileID: 6848835073187190982, guid: 9b5537656c2551f4ba0bf3a28a0e6833,
+        type: 3}
+      propertyPath: minigameSceneName
+      value: 
+      objectReference: {fileID: 0}
     - target: {fileID: 6848835073187190988, guid: 9b5537656c2551f4ba0bf3a28a0e6833,
         type: 3}
       propertyPath: _grid
@@ -8471,6 +8488,16 @@ PrefabInstance:
       propertyPath: target
       value: 
       objectReference: {fileID: 1758634551}
+    - target: {fileID: 5429309181731518200, guid: a533d056255062444bd4e2c89de73606,
+        type: 3}
+      propertyPath: shiftCamToAlpacaSpeed
+      value: 15
+      objectReference: {fileID: 0}
+    - target: {fileID: 5429309181731518200, guid: a533d056255062444bd4e2c89de73606,
+        type: 3}
+      propertyPath: cam
+      value: 
+      objectReference: {fileID: 360098139}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a533d056255062444bd4e2c89de73606, type: 3}
 --- !u!20 &360098139 stripped
@@ -13033,7 +13060,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   alpaca: {fileID: 1758634552}
   gates:
-  - sceneName: Levels/B1
+  - sceneName: Scenes/B1
     gateCoords: {x: -3, y: 2, z: 0}
     playerEnteredSpawnPos: {x: -2, y: 3, z: 0}
     playerEnteredSpawnDir: 2
@@ -31533,7 +31560,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   inNeed: 1
-  minigameSceneName: Minigame
+  minigameSceneName: Scenes/Minigames/Minigame
   comic: {fileID: 1470504299}
 --- !u!114 &1470504299
 MonoBehaviour:
@@ -31548,8 +31575,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   panels:
-  - {fileID: 21300000, guid: ce175667fc5c1fe4ba75a12743362f8e, type: 3}
-  - {fileID: 21300000, guid: 99dd130cf331cf340b3d8a7d81e865db, type: 3}
+  - {fileID: 21300000, guid: 5b7e375e1b6eb714288629a847971008, type: 3}
+  - {fileID: 21300000, guid: e0b128fd68189764e9e0c89f5dca6d5b, type: 3}
   - {fileID: 21300000, guid: 8d4eaf1204b510249872bcee44d639ea, type: 3}
 --- !u!1 &1470534379
 GameObject:
@@ -38854,7 +38881,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4105754181196000, guid: a766938edf27ac3478ad5627f052337e, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -1
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4105754181196000, guid: a766938edf27ac3478ad5627f052337e, type: 3}
       propertyPath: m_LocalPosition.y

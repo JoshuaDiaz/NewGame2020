@@ -15,42 +15,42 @@ using Anonym.Isometric;
  */
 public class WorldScript : MonoBehaviour {
 
-	private const int numberOfLevels = 26;
-	Map map;
-	Alpaca alpaca;
-	private int level;
-
-	// Scoreboard keeps track of level time and numberOfMoves
-	public ScoreboardController scoreboardController;
-
-
-	// used to highlight four quadrants
-	public GameObject quadrant_0, quadrant_1, quadrant_2, quadrant_3;
-	private Image[] quadrants;
-
-	// leve complete! screen
-	public GameObject levelCompleteScreen;
-
-	private BlockButt blockButt;
-
+	/** Player reference **/
+	private Alpaca alpaca;
+	
+	/** UI references **/
 	public ComicController comicController;
 
+	/** Game Control **/
+	// movement
+	public GameObject quadrant_0, quadrant_1, quadrant_2, quadrant_3;
+	private Image[] quadrants;
+	// interaction
+	private BlockButt blockButt;
+	// scene control
 	public SceneLoadController sceneLoadController;
 
+	/** Game state **/
+	private Map map;
 	public enum GameMode {WALKING, COMIC, MINIGAME};
 	private GameMode gameMode;
 
+
+/*============================================================================*/
+#region Initialization
 
 	void Awake() 
 	{
 		if(map == null) {
 			map = new Map(100, 100);
 		}
+
+		gameMode = GameMode.WALKING;
 	}
 
 
-	// Use this for initialization
-	void Start () {
+	void Start() 
+	{
 		// level = int.Parse(Regex.Match(SceneManager.GetActiveScene().name, @"\d+").Value);
       	// currentLevelName currentLevelScript = GameObject.Find("GameObject").GetComponent<currentLevelName>();
       	// currentLevelScript.currentLevelNameString = SceneManager.GetActiveScene().name;
@@ -63,85 +63,35 @@ public class WorldScript : MonoBehaviour {
 		quadrant_1.GetComponent<RectTransform>().sizeDelta = quad_dim;
 		quadrant_2.GetComponent<RectTransform>().sizeDelta = quad_dim;
 		quadrant_3.GetComponent<RectTransform>().sizeDelta = quad_dim;
-
 		quadrants = new Image[4]{quadrant_0.GetComponent<Image>(),
-										quadrant_1.GetComponent<Image>(),
-										quadrant_2.GetComponent<Image>(),
-										quadrant_3.GetComponent<Image>()};
+								 quadrant_1.GetComponent<Image>(),
+								 quadrant_2.GetComponent<Image>(),
+								 quadrant_3.GetComponent<Image>()};
 		quadrants[0].enabled = false;
 		quadrants[1].enabled = false;
 		quadrants[2].enabled = false;
 		quadrants[3].enabled = false;
 
 		// clickedWhere = lastClickedWhere = FacingDirection.SW;
-		// pan_ctrlr = GameObject.Find("Pan Butt").GetComponent<PanButtonController>();
-		// cam controller assign in editor
-		// comic controller assign in editor
-		gameMode = GameMode.WALKING;
+		// comic controller assigned in editor
+		// scene load controller assigned in editor
+		// block butt and alpaca add themselves
 	}
 
 
-	void Update () {
-		ProcessCurrBlock();
-		ProcessInput();
-	}
-
-
-/*============================================================================*/
-#region QuadrantHighlighting
-
-	/**
-	 * Remove all highlights from screen
-	 */
-	void ClearHighlights() {
-		quadrants[0].enabled = false;
-		quadrants[1].enabled = false;
-		quadrants[2].enabled = false;
-		quadrants[3].enabled = false;
-    }
-
-    /**
-     * Makes the current click position highlighted
-     */
-    void HighlightQuadrant() {
-    	ClearHighlights();
-    	if(clickedWhere == FacingDirection.NONE) return;
-    	quadrants[(int)clickedWhere].enabled = true;
-    }
-
-	// = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = =
-	// = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = MODEL DECLARATION
-	// = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = =
-
-	/**
-	 * Adds a block to the map. Every block declares itself when its GridCoordinates
-	 * object is initialized (Start() method).
-	 *
-	 * @param {name} Name of block
-	 * @param {last} Previous coordinate of block, if existed
-	 * @param {coords} Location of block
-	 */
-	public void AddBlock(string name, Vector3 last, Vector3 coords, GridCoordinates obj) {
+	 /** Adds a block to the map. Every block declares itself when its GridCoordinates
+	     object is initialized (Start() method). **/
+	public void AddBlock(string name, Vector3 last, Vector3 coords, GridCoordinates obj) 
+	{
 		if(map == null) {
 			map = new Map(100, 100);
 		}
 		map.AddBlock(name, last, coords, obj);
 	}
 
-	/**
-	 * Adds the alpaca model to world. Alpaca object declares itself in its constructor.
-	 *
-	 * @param {a} Alpaca
-	 */
-	public void AddAlpaca(Alpaca a) {
-		if(map == null) {
-			map = new Map(100, 100);
-		}
-		alpaca = a;
-	}
 
-
-	public void AddBlockButt(BlockButt b) {
+	public void AddBlockButt(BlockButt b) 
+	{
 		if(map == null) {
 			map = new Map(100, 100);
 		}
@@ -149,31 +99,70 @@ public class WorldScript : MonoBehaviour {
 	}
 
 
+	/** Adds the alpaca model to world. Alpaca object declares itself in its constructor. **/
+	public void AddAlpaca(Alpaca a) 
+	{
+		if(map == null) {
+			map = new Map(100, 100);
+		}
+		alpaca = a;
+	}
+
+
+
+	void Update() 
+	{
+		ProcessCurrBlock();
+		ProcessInput();
+	}
+
+#endregion
+/*============================================================================*/
+#region QuadrantHighlighting
+
+	/** Remove all highlights from screen **/
+	void ClearHighlights() 
+	{
+		quadrants[0].enabled = false;
+		quadrants[1].enabled = false;
+		quadrants[2].enabled = false;
+		quadrants[3].enabled = false;
+    }
+
+
+    /** Makes the current click position highlighted **/
+    void HighlightQuadrant() 
+	{
+    	ClearHighlights();
+    	if(clickedWhere == FacingDirection.NONE) return;
+    	quadrants[(int)clickedWhere].enabled = true;
+    }
+
+
 #endregion
 /*============================================================================*/
 #region BlockProcessing
 
-	/**
-	 * Helper function for Block Tutorial
-	 */
-	public Block GetBlockAlpacaFacing() {
-		return GetBlockAt(alpaca.GetCurrAlpacaDest(clickedWhere));
-	}
-
-	/**
-	 * Get the block below the given location.
-	 */
-	Block GetBlockBelow(Vector3 loc) {
-		if(loc == null || map == null) return null;
-		loc.y--;
-		loc.y = (float)Math.Ceiling(loc.y);
+	/** Get the block at the given location. **/
+	Block GetBlockAt(Vector3 loc) 
+	{
 		return map.GetBlock(loc);
 	}
 
-	/**
-	 * Get the block at the given location.
-	 */
-	Block GetBlockAt(Vector3 loc) {
+
+	/** Helper function for Block Tutorial **/
+	public Block GetBlockAlpacaFacing() 
+	{
+		return GetBlockAt(alpaca.GetCurrAlpacaDest(clickedWhere));
+	}
+
+
+	/** Get the block below the given location. **/
+	Block GetBlockBelow(Vector3 loc) 
+	{
+		if(loc == null || map == null) return null;
+		loc.y--;
+		loc.y = (float)Math.Ceiling(loc.y);
 		return map.GetBlock(loc);
 	}
 
@@ -181,19 +170,19 @@ public class WorldScript : MonoBehaviour {
 	/**
 	 * Get the block above the given location.
 	 */
-	Block GetBlockAbove(Vector3 loc) {
+	Block GetBlockAbove(Vector3 loc) 
+	{
 		loc.y++;
 		loc.y = (float)Math.Ceiling(loc.y);
 		return map.GetBlock(loc);
 	}
 
 
-	/**
-	 * Checks what block the alpaca is on currently and handles its logic.
-	 * (Dies for lava and wins for win block.)
-	 */
+	/** Checks what block the alpaca is on currently and handles its logic.
+	   (Dies for lava and wins for win block.) **/
 	float end_timer = 0; // used to delay level transition before win sound plays
-	void ProcessCurrBlock() {
+	void ProcessCurrBlock() 
+	{
 		Block currBlock = GetBlockBelow(alpaca.GetCurrAlpacaLocation());
 		if(currBlock == null) {
 			return;
@@ -245,8 +234,10 @@ public class WorldScript : MonoBehaviour {
 	}
 
 
-	Block highlighted; // block highlighted if you're holding a block, used as local static variable forHandleFronBlockHighlight()
-	void HandleFrontBlockHighlight() {
+	Block highlighted; // block highlighted if you're holding a block, used as local static variable 
+					   // for HandleFrontBlockHighlight()
+	void HandleFrontBlockHighlight() 
+	{
 		if(highlighted != null)
 			highlighted.Unhighlight();
 		if(!alpaca.HasBlock())
@@ -260,11 +251,13 @@ public class WorldScript : MonoBehaviour {
 		}
 	}
 
+
 	/**
 	 * Changes the alpaca's coordinates depending on the click location, and
 	 * the surrounding blocks.
 	 */
-	void MoveOnClick() {
+	void MoveOnClick() 
+	{
 		// change facing direction before walking in that direction
 		if(lastClickedWhere != clickedWhere) {
 			alpaca.SetFacingDirection(clickedWhere);
@@ -311,62 +304,84 @@ public class WorldScript : MonoBehaviour {
 #endregion
 /*============================================================================*/
 #region NPC Interaction
-	
+
+
 	/**
-	 * Called from Interact Button UI Elements 
+	 * Called from Interact Button UI Element.
 	 */
-    public void ClickInteractButt() {
-		InteractWithNPC();
+	bool interactButtClicked = false;
+    public void ClickInteractButt() 
+	{
+		interactButtClicked = true;
     }
 
-
+	
 	/**
-	 * Handle appearance of the interaction button along with highlighting/dehighlighting of NPCs
-	 * lastHighlightBlock is used as a local static variable for this functions
+	 * Handle highlighting/dehighlighting of NPCs, along with polling for NPC interaction
+	 * lastHighlightBlock is used as a local static variable for this function
 	 */
 	Block lastHighlightBlock = null; // used to unhighlight block in front
-    void UpdateInteractButt() 
+    void UpdateInteractability() 
 	{
-    	if(blockButt == null) return;
-
-    	Vector3 curr = alpaca.GetCurrAlpacaLocation();
     	Vector3 dest = alpaca.GetCurrAlpacaDest(clickedWhere);
-		Block prevHighlightBlock = lastHighlightBlock;
-    	lastHighlightBlock = GetBlockAt(dest); 
-		
-		if(prevHighlightBlock != null && prevHighlightBlock.isBlockHighlighted() && prevHighlightBlock != lastHighlightBlock) {
-			// Dehighlight previously highlighted block if we're no longer looking at it	
-			prevHighlightBlock.Unhighlight();
-		}
+		Block prevHighlightBlock = lastHighlightBlock; // block looked at in the last frame
+    	lastHighlightBlock = GetBlockAt(dest); // block currently being looked at 
 
+		// Process interactability and highlighting for the block currently being viewed 
 		switch(gameMode) {
 
-			case GameMode.WALKING: // UpdateInteractButt() called on loop when in this gameMode 
+			case GameMode.WALKING: // UpdateInteractability() called on loop when in this gameMode 
+				
+				// Looked away from last block
+				if(prevHighlightBlock != null && prevHighlightBlock != lastHighlightBlock) {
+					// Dehighlight previously highlighted block	
+					if(prevHighlightBlock.isBlockHighlighted()) {
+						prevHighlightBlock.Unhighlight();
+					}
+					// If moving away from an NPC, set it to be unclickable/ reset the 'clicked' field.
+					if(prevHighlightBlock.b_type == Block.BlockType.NPC) {
+						prevHighlightBlock.coord_obj.GetComponent<NPCInteractionController>().SetClickable(false);
+						interactButtClicked = false;
+						blockButt.SetToDeactivated();
+					}
+				}
+				
 				if(lastHighlightBlock != null && lastHighlightBlock.b_type == Block.BlockType.NPC) {
-					// If an NPC is in front of you, highlight them and turn on the interact button. 
+					// If an NPC is in front of you, highlight them. 
 					if(!lastHighlightBlock.isBlockHighlighted()) {
 						lastHighlightBlock.Highlight();
 					}
+					// Allow NPC to be clicked, and poll whether it has been clicked to trigger its interaction.
+					NPCInteractionController npc = lastHighlightBlock.coord_obj.GetComponent<NPCInteractionController>();
 					blockButt.SetToActivated();
+					blockButt.GetComponent<RectTransform>().anchoredPosition = 
+						comicController.cameraController.WorldToScreenCoords(new Vector3(lastHighlightBlock.p_x, lastHighlightBlock.p_y, lastHighlightBlock.p_z));
+					if(npc.isClicked() || interactButtClicked) {
+						npc.SetClickable(false);
+						interactButtClicked = false;
+						blockButt.SetToDeactivated();
+						InteractWithNPC(ref npc);
+					}
+					else {
+						npc.SetClickable(true);
+					}
 				} 
-				else {
-					blockButt.SetToDeactivated();
-				}
 				break;
 
-			case GameMode.COMIC: // UpdateInteractButt() called in this gameMode only when button is pressed to activate comic
-				blockButt.SetToDeactivated();
-				if(lastHighlightBlock != null) {
+
+			case GameMode.COMIC: // UpdateInteractability() called in this gameMode only when comic is activated
+				if(lastHighlightBlock != null && lastHighlightBlock.isBlockHighlighted()) {
 					lastHighlightBlock.Unhighlight();
 				}
 				break;
 
-			case GameMode.MINIGAME:
-				blockButt.SetToDeactivated();
-				if(lastHighlightBlock != null) {
+
+			case GameMode.MINIGAME: // UpdateInteractability() called in this gameMode only when minigame starts
+				if(lastHighlightBlock != null && lastHighlightBlock.isBlockHighlighted()) {
 					lastHighlightBlock.Unhighlight();
 				}
 				break;
+
 
 			default:
 				break;
@@ -374,34 +389,28 @@ public class WorldScript : MonoBehaviour {
     }
 
 
-	void InteractWithNPC() {
-    	Vector3 curr = alpaca.GetCurrAlpacaLocation();
-    	Vector3 dest = alpaca.GetCurrAlpacaDest(clickedWhere);
-    	
-		Block clickedBlock = map.GetBlock(dest); // Reference to the NPC we are clicking
-		if(clickedBlock.b_type == Block.BlockType.NPC) {
-    		NPCInteractionController temp = clickedBlock.coord_obj.GetComponent<NPCInteractionController>();
-			if(temp != null) {
-				comicController.SetComicAndMinigame(ref temp.comic, temp.minigameSceneName);
-				comicController.DisplayComicAndShiftCam();
-				gameMode = GameMode.COMIC;
-			}
-    	} 
+	void InteractWithNPC(ref NPCInteractionController npc) 
+	{
+		if(npc != null) {
+			comicController.SetComicAndMinigame(ref npc.comic, npc.minigameSceneName);
+			comicController.DisplayComicAndShiftCam();
+			gameMode = GameMode.COMIC;
+		}
 
-		UpdateInteractButt();
+		UpdateInteractability(); // Unhighlight NPC 
 		alpaca.StopWalk();
     }
 
 
 
-	/* Called by ComicController / GeneralMinigameController
+	/* Called by GeneralMinigameController
 	 * Sets the gameMode and updates UI elements.
 	 */
 	public void SetMinigameMode(bool set)
 	{
 		if(set && gameMode != GameMode.MINIGAME) { // set to minigame mode, deactivate block butt and highlighting
 			gameMode = GameMode.MINIGAME;
-			UpdateInteractButt();
+			UpdateInteractability();
 		}
 		else if(!set && gameMode == GameMode.MINIGAME) { // deactivate minigame mode
 			gameMode = GameMode.WALKING;
@@ -424,14 +433,16 @@ public class WorldScript : MonoBehaviour {
 
 	float death_timer = 0.5f; // Used to delay before you can click screen to restart after death
 
-	public FacingDirection AlpClickedWhere() {
-		return clickedWhere;
-	}
+	// public FacingDirection AlpClickedWhere() 
+	// {
+	// 	return clickedWhere;
+	// }
 
 	/**
 	 * Processes the input for this update.
 	 */
-    void ProcessInput() {
+    void ProcessInput() 
+	{
 		switch(gameMode)
 		{
 			case GameMode.WALKING: ///// GAME MODE /////
@@ -462,7 +473,7 @@ public class WorldScript : MonoBehaviour {
 					}
 				}
 				HandleFrontBlockHighlight();
-				UpdateInteractButt();
+				UpdateInteractability();
 				didClick = ClickedNow();
 				break;
 
@@ -481,10 +492,10 @@ public class WorldScript : MonoBehaviour {
 		}
 	}
 
-	/**
-	 * Returns true iff there was a click during this update.
-	 */
-	bool ClickedNow() {
+
+	/** Returns true iff there was a click during this update. **/
+	bool ClickedNow() 
+	{
 		// check if is on ui button (this version works for mobile too)
 		PointerEventData eventDataCurrentPosition = new PointerEventData(EventSystem.current);
 		eventDataCurrentPosition.position = new Vector2(Input.mousePosition.x, Input.mousePosition.y);
@@ -494,13 +505,6 @@ public class WorldScript : MonoBehaviour {
 		return Input.GetMouseButton(0) && !(results.Count > 0) && end_timer == 0;
 	}
 
-	/**
-	 * Also used in Lvl1Tutorial
-	 */
-	// Used to determine which quadrant is clicked
-	int padding = Screen.height / 12; // do not process if user clicks too close to boundary
-    int middle_x = Screen.width / 2;
-    int middle_y = Screen.height / 2;
 
     /**
      * Returns which quadrant the click this update was on.
@@ -512,7 +516,11 @@ public class WorldScript : MonoBehaviour {
 	 *
 	 *  Returns-1 if too close to the boundary
      */
-    FacingDirection ClickedWhere() {
+	int padding = Screen.height / 12; // do not process if user clicks too close to boundary
+    int middle_x = Screen.width / 2;
+    int middle_y = Screen.height / 2;
+    FacingDirection ClickedWhere() 
+	{
 		if(clickPos.x < middle_x - padding) {
 			if (clickPos.y < middle_y - padding) return FacingDirection.SW;
 			else if(clickPos.y > middle_y + padding) return FacingDirection.NW;

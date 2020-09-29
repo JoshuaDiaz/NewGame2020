@@ -15,15 +15,22 @@ public class NoteObject : MonoBehaviour
     {
         fall = false;
         rectTransform = gameObject.GetComponent<RectTransform>();
-        counter = 0f;
     }
 
-    float counter;
+
+    public void Init(float x, float y, float noteSpeed, int lane)
+    {
+        rectTransform.anchoredPosition = new Vector3(x, y, 0);
+        rectTransform.localScale = new Vector3(1f, 1f, 1f);
+        this.noteSpeed = noteSpeed;
+        this.lane = lane;
+        fall = true;
+    }
+
+    
     void Update() {
-        if(fall)
-        {
-            GetComponent<RectTransform>().anchoredPosition -= new Vector2(0, noteSpeed*Time.deltaTime);  
-            counter += Time.deltaTime; 
+        if(fall) {
+            rectTransform.anchoredPosition -= new Vector2(0, noteSpeed*Time.deltaTime);  
         } 
     }
 
@@ -44,7 +51,6 @@ public class NoteObject : MonoBehaviour
     private void OnTriggerExit2D(Collider2D other) 
     {
         if(other.name.Contains("Butt")) {
-            Debug.Log("BYE");
             if(recyclable) {
                 RecycleGameManager.instance.UntrackNote(this);
             }
@@ -52,16 +58,14 @@ public class NoteObject : MonoBehaviour
     }
 
 
-    public void Init(float noteSpeed, int lane)
-    {
-        this.noteSpeed = noteSpeed;
-        this.lane = lane;
-        fall = true;
-    }
-
-
     public int GetLane()
     {
         return lane;
+    }
+
+    
+    public float GetY()
+    {
+        return rectTransform.anchoredPosition.y;
     }
 }

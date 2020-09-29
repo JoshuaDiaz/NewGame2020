@@ -8,20 +8,18 @@ public class GeneralMinigameController : MonoBehaviour
 {
     [SerializeField] protected RectTransform canvasTransform;
     [SerializeField] private float moveSpeed, scaleSpeed;
-    private bool initializing;
     private WorldScript worldRef;
     protected bool playing;
 
 
     protected void Start()
     {
-        initializing = true;
         playing = false;
-        // worldRef = GameObject.FindWithTag("WORLD").GetComponent<WorldScript>();
-        // if(worldRef != null) {
-        //     worldRef.SetMinigameMode(true);
-        //     worldRef.comicController.SlideComicLeftAndOut(moveSpeed);
-        // }
+        worldRef = GameObject.FindWithTag("WORLD").GetComponent<WorldScript>();
+        if(worldRef != null) {
+            worldRef.SetMinigameMode(true);
+            worldRef.comicController.SlideComicLeftAndOut(moveSpeed);
+        }
         AudioManager.PlaySound("RecordScratch");
     }
 
@@ -30,7 +28,7 @@ public class GeneralMinigameController : MonoBehaviour
     // Update is called once per frame
     protected void Update()
     {
-        if(initializing) {
+        if(!playing) {
             if(Mathf.Abs(Vector2.Distance(canvasTransform.anchoredPosition, Vector2.zero)) > 0.01f) { // slide game in
                 canvasTransform.anchoredPosition = Vector2.Lerp(canvasTransform.anchoredPosition, Vector2.zero, lerp_timer);
                 lerp_timer += moveSpeed*Time.deltaTime;
@@ -42,10 +40,8 @@ public class GeneralMinigameController : MonoBehaviour
             else { // set final positions, start game
                 canvasTransform.anchoredPosition = Vector2.zero;
                 canvasTransform.localScale = Vector3.one;
-                initializing = false;
                 lerp_timer = lerp_timer2 = 0;
                 playing = true;
-                AudioManager.PlaySound("Background");
             }
         }
     }
@@ -53,6 +49,7 @@ public class GeneralMinigameController : MonoBehaviour
 
     public void EndMinigame()
     {
+        AudioManager.PlaySound("RecordScratch");
         GameObject.Find("InactiveAudioMan").GetComponent<AudioManager>().Awake(); // restore overworld audioMan
         AudioManager.PlaySound("Background");
         worldRef.SetMinigameMode(false); // turn off minigame mode
