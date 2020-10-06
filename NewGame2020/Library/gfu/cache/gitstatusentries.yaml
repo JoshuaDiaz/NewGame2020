@@ -13,12 +13,199 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cacheType: 6
-  lastUpdatedAtString: 2020-09-29T17:05:43.816-07:00
-  initializedAtString: 2020-09-29T17:05:43.816-07:00
+  lastUpdatedAtString: 2020-10-06T10:41:30.346-07:00
+  initializedAtString: 2020-10-05T14:08:15.531-07:00
   entries:
+  - path: NewGame2020\Assets\Anonym\MapEditor\script\IsometricCharacterController.cs
+    fullPath: C:\Users\Joshua Diaz\Projects\Lucia\NewGame2020\NewGame2020\Assets\Anonym\MapEditor\script\IsometricCharacterController.cs
+    projectPath: Assets\Anonym\MapEditor\script\IsometricCharacterController.cs
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: NewGame2020\Assets\Anonym\MapEditor\script\IsometricMovement.cs
+    fullPath: C:\Users\Joshua Diaz\Projects\Lucia\NewGame2020\NewGame2020\Assets\Anonym\MapEditor\script\IsometricMovement.cs
+    projectPath: Assets\Anonym\MapEditor\script\IsometricMovement.cs
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: NewGame2020\Assets\Prefabs\player prefab.prefab
+    fullPath: C:\Users\Joshua Diaz\Projects\Lucia\NewGame2020\NewGame2020\Assets\Prefabs\player
+      prefab.prefab
+    projectPath: Assets\Prefabs\player prefab.prefab
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: NewGame2020\Assets\Scenes\B1.unity
+    fullPath: C:\Users\Joshua Diaz\Projects\Lucia\NewGame2020\NewGame2020\Assets\Scenes\B1.unity
+    projectPath: Assets\Scenes\B1.unity
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: NewGame2020\Assets\Scenes\Minigames\MAZErati.unity
+    fullPath: C:\Users\Joshua Diaz\Projects\Lucia\NewGame2020\NewGame2020\Assets\Scenes\Minigames\MAZErati.unity
+    projectPath: Assets\Scenes\Minigames\MAZErati.unity
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: NewGame2020\Assets\Scenes\Minigames\MAZErati.unity.meta
+    fullPath: C:\Users\Joshua Diaz\Projects\Lucia\NewGame2020\NewGame2020\Assets\Scenes\Minigames\MAZErati.unity.meta
+    projectPath: Assets\Scenes\Minigames\MAZErati.unity.meta
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: NewGame2020\Assets\Scenes\Minigames\RecycleHero.unity
+    fullPath: C:\Users\Joshua Diaz\Projects\Lucia\NewGame2020\NewGame2020\Assets\Scenes\Minigames\RecycleHero.unity
+    projectPath: Assets\Scenes\Minigames\RecycleHero.unity
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: NewGame2020\Assets\Scenes\Minigames\TacoRriendo.unity
+    fullPath: C:\Users\Joshua Diaz\Projects\Lucia\NewGame2020\NewGame2020\Assets\Scenes\Minigames\TacoRriendo.unity
+    projectPath: Assets\Scenes\Minigames\TacoRriendo.unity
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: NewGame2020\Assets\Scripts\Minigames\GeneralMinigameController.cs
+    fullPath: C:\Users\Joshua Diaz\Projects\Lucia\NewGame2020\NewGame2020\Assets\Scripts\Minigames\GeneralMinigameController.cs
+    projectPath: Assets\Scripts\Minigames\GeneralMinigameController.cs
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: NewGame2020\Assets\Scripts\Minigames\RecycleGameManager.cs
+    fullPath: C:\Users\Joshua Diaz\Projects\Lucia\NewGame2020\NewGame2020\Assets\Scripts\Minigames\RecycleGameManager.cs
+    projectPath: Assets\Scripts\Minigames\RecycleGameManager.cs
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: NewGame2020\Assets\Scripts\Minigames\TacoRriendo\TacoRunnerGameManager.cs
+    fullPath: C:\Users\Joshua Diaz\Projects\Lucia\NewGame2020\NewGame2020\Assets\Scripts\Minigames\TacoRriendo\TacoRunnerGameManager.cs
+    projectPath: Assets\Scripts\Minigames\TacoRriendo\TacoRunnerGameManager.cs
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
   - path: NewGame2020\Library\ArtifactDB
     fullPath: C:\Users\Joshua Diaz\Projects\Lucia\NewGame2020\NewGame2020\Library\ArtifactDB
     projectPath: Library\ArtifactDB
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: NewGame2020\Library\Artifacts\29\296a188449da6a192336b31d4a8ef75b
+    fullPath: C:\Users\Joshua Diaz\Projects\Lucia\NewGame2020\NewGame2020\Library\Artifacts\29\296a188449da6a192336b31d4a8ef75b
+    projectPath: Library\Artifacts\29\296a188449da6a192336b31d4a8ef75b
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: NewGame2020\Library\Artifacts\2c\2c17a3c1c0a6d69f0ecb3b3fad28dd79
+    fullPath: C:\Users\Joshua Diaz\Projects\Lucia\NewGame2020\NewGame2020\Library\Artifacts\2c\2c17a3c1c0a6d69f0ecb3b3fad28dd79
+    projectPath: Library\Artifacts\2c\2c17a3c1c0a6d69f0ecb3b3fad28dd79
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: NewGame2020\Library\Artifacts\56\560305e47efc5b7f47bcff0a0d04da70
+    fullPath: C:\Users\Joshua Diaz\Projects\Lucia\NewGame2020\NewGame2020\Library\Artifacts\56\560305e47efc5b7f47bcff0a0d04da70
+    projectPath: Library\Artifacts\56\560305e47efc5b7f47bcff0a0d04da70
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: NewGame2020\Library\Artifacts\58\58b9824ad1656cad21103b4d10b6e062
+    fullPath: C:\Users\Joshua Diaz\Projects\Lucia\NewGame2020\NewGame2020\Library\Artifacts\58\58b9824ad1656cad21103b4d10b6e062
+    projectPath: Library\Artifacts\58\58b9824ad1656cad21103b4d10b6e062
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: NewGame2020\Library\Artifacts\5f\5f134a00d971ba278eccc6ab458782b5
+    fullPath: C:\Users\Joshua Diaz\Projects\Lucia\NewGame2020\NewGame2020\Library\Artifacts\5f\5f134a00d971ba278eccc6ab458782b5
+    projectPath: Library\Artifacts\5f\5f134a00d971ba278eccc6ab458782b5
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: NewGame2020\Library\Artifacts\6a\6a14708d663d96d84e9b677a3011dac6
+    fullPath: C:\Users\Joshua Diaz\Projects\Lucia\NewGame2020\NewGame2020\Library\Artifacts\6a\6a14708d663d96d84e9b677a3011dac6
+    projectPath: Library\Artifacts\6a\6a14708d663d96d84e9b677a3011dac6
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: NewGame2020\Library\Artifacts\76\76820fe8bd8cc6383a65a8088b78f5a7
+    fullPath: C:\Users\Joshua Diaz\Projects\Lucia\NewGame2020\NewGame2020\Library\Artifacts\76\76820fe8bd8cc6383a65a8088b78f5a7
+    projectPath: Library\Artifacts\76\76820fe8bd8cc6383a65a8088b78f5a7
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: NewGame2020\Library\Artifacts\97\97043d1ad2d8924df6137a305212b1a9
+    fullPath: C:\Users\Joshua Diaz\Projects\Lucia\NewGame2020\NewGame2020\Library\Artifacts\97\97043d1ad2d8924df6137a305212b1a9
+    projectPath: Library\Artifacts\97\97043d1ad2d8924df6137a305212b1a9
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: NewGame2020\Library\Artifacts\ad\adfaf5d57543d295acab8bc6931b9f73
+    fullPath: C:\Users\Joshua Diaz\Projects\Lucia\NewGame2020\NewGame2020\Library\Artifacts\ad\adfaf5d57543d295acab8bc6931b9f73
+    projectPath: Library\Artifacts\ad\adfaf5d57543d295acab8bc6931b9f73
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: NewGame2020\Library\Artifacts\b6\b678faaec7f23d04dc833a41dabdc0e5
+    fullPath: C:\Users\Joshua Diaz\Projects\Lucia\NewGame2020\NewGame2020\Library\Artifacts\b6\b678faaec7f23d04dc833a41dabdc0e5
+    projectPath: Library\Artifacts\b6\b678faaec7f23d04dc833a41dabdc0e5
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: NewGame2020\Library\Artifacts\bc\bc1da0ad9d523cdf76400e1a7ae54dce
+    fullPath: C:\Users\Joshua Diaz\Projects\Lucia\NewGame2020\NewGame2020\Library\Artifacts\bc\bc1da0ad9d523cdf76400e1a7ae54dce
+    projectPath: Library\Artifacts\bc\bc1da0ad9d523cdf76400e1a7ae54dce
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: NewGame2020\Library\Artifacts\c8\c8031bce210a91ae774a2bcb987d9bfc
+    fullPath: C:\Users\Joshua Diaz\Projects\Lucia\NewGame2020\NewGame2020\Library\Artifacts\c8\c8031bce210a91ae774a2bcb987d9bfc
+    projectPath: Library\Artifacts\c8\c8031bce210a91ae774a2bcb987d9bfc
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: NewGame2020\Library\Artifacts\ce\cef3debeefa2d6760664a706722e5241
+    fullPath: C:\Users\Joshua Diaz\Projects\Lucia\NewGame2020\NewGame2020\Library\Artifacts\ce\cef3debeefa2d6760664a706722e5241
+    projectPath: Library\Artifacts\ce\cef3debeefa2d6760664a706722e5241
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: NewGame2020\Library\Artifacts\d0\d0b6a9c61e1b3edfb1a006b6baa8a7a8
+    fullPath: C:\Users\Joshua Diaz\Projects\Lucia\NewGame2020\NewGame2020\Library\Artifacts\d0\d0b6a9c61e1b3edfb1a006b6baa8a7a8
+    projectPath: Library\Artifacts\d0\d0b6a9c61e1b3edfb1a006b6baa8a7a8
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: NewGame2020\Library\Artifacts\dc\dcd2a805cc57e9c425843479ccf1365b
+    fullPath: C:\Users\Joshua Diaz\Projects\Lucia\NewGame2020\NewGame2020\Library\Artifacts\dc\dcd2a805cc57e9c425843479ccf1365b
+    projectPath: Library\Artifacts\dc\dcd2a805cc57e9c425843479ccf1365b
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: NewGame2020\Library\Artifacts\e0\e0fb7adb3ab339a1cf844505595c9a54
+    fullPath: C:\Users\Joshua Diaz\Projects\Lucia\NewGame2020\NewGame2020\Library\Artifacts\e0\e0fb7adb3ab339a1cf844505595c9a54
+    projectPath: Library\Artifacts\e0\e0fb7adb3ab339a1cf844505595c9a54
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: NewGame2020\Library\Artifacts\f3\f3912bacafc0d9c0b982620fc7e40943
+    fullPath: C:\Users\Joshua Diaz\Projects\Lucia\NewGame2020\NewGame2020\Library\Artifacts\f3\f3912bacafc0d9c0b982620fc7e40943
+    projectPath: Library\Artifacts\f3\f3912bacafc0d9c0b982620fc7e40943
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: NewGame2020\Library\Artifacts\fe\feb3a964c7065d19db31617b7e1e1e44
+    fullPath: C:\Users\Joshua Diaz\Projects\Lucia\NewGame2020\NewGame2020\Library\Artifacts\fe\feb3a964c7065d19db31617b7e1e1e44
+    projectPath: Library\Artifacts\fe\feb3a964c7065d19db31617b7e1e1e44
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: NewGame2020\Library\CurrentLayout-default.dwlt
+    fullPath: C:\Users\Joshua Diaz\Projects\Lucia\NewGame2020\NewGame2020\Library\CurrentLayout-default.dwlt
+    projectPath: Library\CurrentLayout-default.dwlt
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: NewGame2020\Library\CurrentMaximizeLayout.dwlt
+    fullPath: C:\Users\Joshua Diaz\Projects\Lucia\NewGame2020\NewGame2020\Library\CurrentMaximizeLayout.dwlt
+    projectPath: Library\CurrentMaximizeLayout.dwlt
     originalPath: 
     indexStatus: 0
     workTreeStatus: 3
@@ -28,15 +215,57 @@ MonoBehaviour:
     originalPath: 
     indexStatus: 1
     workTreeStatus: 1
+  - path: NewGame2020\Library\expandedItems
+    fullPath: C:\Users\Joshua Diaz\Projects\Lucia\NewGame2020\NewGame2020\Library\expandedItems
+    projectPath: Library\expandedItems
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: NewGame2020\Library\gfu\cache\gitlocks.yaml
+    fullPath: C:\Users\Joshua Diaz\Projects\Lucia\NewGame2020\NewGame2020\Library\gfu\cache\gitlocks.yaml
+    projectPath: Library\gfu\cache\gitlocks.yaml
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: NewGame2020\Library\gfu\cache\gitstatusentries.yaml
+    fullPath: C:\Users\Joshua Diaz\Projects\Lucia\NewGame2020\NewGame2020\Library\gfu\cache\gitstatusentries.yaml
+    projectPath: Library\gfu\cache\gitstatusentries.yaml
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: NewGame2020\Library\gfu\cache\gittrackingstatus.yaml
+    fullPath: C:\Users\Joshua Diaz\Projects\Lucia\NewGame2020\NewGame2020\Library\gfu\cache\gittrackingstatus.yaml
+    projectPath: Library\gfu\cache\gittrackingstatus.yaml
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: NewGame2020\Library\gfu\cache\repoinfo.yaml
+    fullPath: C:\Users\Joshua Diaz\Projects\Lucia\NewGame2020\NewGame2020\Library\gfu\cache\repoinfo.yaml
+    projectPath: Library\gfu\cache\repoinfo.yaml
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: NewGame2020\Library\InspectorExpandedItems.asset
+    fullPath: C:\Users\Joshua Diaz\Projects\Lucia\NewGame2020\NewGame2020\Library\InspectorExpandedItems.asset
+    projectPath: Library\InspectorExpandedItems.asset
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
   - path: NewGame2020\Library\SceneVisibilityState.asset
     fullPath: C:\Users\Joshua Diaz\Projects\Lucia\NewGame2020\NewGame2020\Library\SceneVisibilityState.asset
     projectPath: Library\SceneVisibilityState.asset
     originalPath: 
     indexStatus: 0
     workTreeStatus: 3
-  - path: NewGame2020\Library\shadercompiler-UnityShaderCompiler.exe0.log
-    fullPath: C:\Users\Joshua Diaz\Projects\Lucia\NewGame2020\NewGame2020\Library\shadercompiler-UnityShaderCompiler.exe0.log
-    projectPath: Library\shadercompiler-UnityShaderCompiler.exe0.log
+  - path: NewGame2020\Library\ScriptAssemblies\Assembly-CSharp.dll
+    fullPath: C:\Users\Joshua Diaz\Projects\Lucia\NewGame2020\NewGame2020\Library\ScriptAssemblies\Assembly-CSharp.dll
+    projectPath: Library\ScriptAssemblies\Assembly-CSharp.dll
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: NewGame2020\Library\ScriptAssemblies\Assembly-CSharp-Editor.dll
+    fullPath: C:\Users\Joshua Diaz\Projects\Lucia\NewGame2020\NewGame2020\Library\ScriptAssemblies\Assembly-CSharp-Editor.dll
+    projectPath: Library\ScriptAssemblies\Assembly-CSharp-Editor.dll
     originalPath: 
     indexStatus: 0
     workTreeStatus: 3
@@ -46,9 +275,249 @@ MonoBehaviour:
     originalPath: 
     indexStatus: 0
     workTreeStatus: 3
+  - path: NewGame2020\Library\StateCache\Hierarchy\296ab8-0fad9e511d81d40dc8.json
+    fullPath: C:\Users\Joshua Diaz\Projects\Lucia\NewGame2020\NewGame2020\Library\StateCache\Hierarchy\296ab8-0fad9e511d81d40dc8.json
+    projectPath: Library\StateCache\Hierarchy\296ab8-0fad9e511d81d40dc8.json
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: NewGame2020\Library\StateCache\Hierarchy\296ab8-a766938edf27ac3478.json
+    fullPath: C:\Users\Joshua Diaz\Projects\Lucia\NewGame2020\NewGame2020\Library\StateCache\Hierarchy\296ab8-a766938edf27ac3478.json
+    projectPath: Library\StateCache\Hierarchy\296ab8-a766938edf27ac3478.json
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: NewGame2020\Library\StateCache\Hierarchy\296ab8-mainStage.json
+    fullPath: C:\Users\Joshua Diaz\Projects\Lucia\NewGame2020\NewGame2020\Library\StateCache\Hierarchy\296ab8-mainStage.json
+    projectPath: Library\StateCache\Hierarchy\296ab8-mainStage.json
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: NewGame2020\Library\StateCache\SceneView\00b855-mainStage.json
+    fullPath: C:\Users\Joshua Diaz\Projects\Lucia\NewGame2020\NewGame2020\Library\StateCache\SceneView\00b855-mainStage.json
+    projectPath: Library\StateCache\SceneView\00b855-mainStage.json
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: NewGame2020\Temp\__Backupscenes\0.backup
+    fullPath: C:\Users\Joshua Diaz\Projects\Lucia\NewGame2020\NewGame2020\Temp\__Backupscenes\0.backup
+    projectPath: Temp\__Backupscenes\0.backup
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: NewGame2020\Temp\ProcessJobs\e9a6970f79cd12d8b075e7d72f1b07cb.bakert
+    fullPath: C:\Users\Joshua Diaz\Projects\Lucia\NewGame2020\NewGame2020\Temp\ProcessJobs\e9a6970f79cd12d8b075e7d72f1b07cb.bakert
+    projectPath: Temp\ProcessJobs\e9a6970f79cd12d8b075e7d72f1b07cb.bakert
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
   - path: NewGame2020\Temp\UnityLockfile
     fullPath: C:\Users\Joshua Diaz\Projects\Lucia\NewGame2020\NewGame2020\Temp\UnityLockfile
     projectPath: Temp\UnityLockfile
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: NewGame2020\Temp\UnityTempFile-026fb57a73342d147aff4dce1eee2415
+    fullPath: C:\Users\Joshua Diaz\Projects\Lucia\NewGame2020\NewGame2020\Temp\UnityTempFile-026fb57a73342d147aff4dce1eee2415
+    projectPath: Temp\UnityTempFile-026fb57a73342d147aff4dce1eee2415
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: NewGame2020\Temp\UnityTempFile-0420b9b29cd0f2147898113fd9d7e2b3
+    fullPath: C:\Users\Joshua Diaz\Projects\Lucia\NewGame2020\NewGame2020\Temp\UnityTempFile-0420b9b29cd0f2147898113fd9d7e2b3
+    projectPath: Temp\UnityTempFile-0420b9b29cd0f2147898113fd9d7e2b3
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: NewGame2020\Temp\UnityTempFile-05353d3f2e2b29b499f129439815a26b
+    fullPath: C:\Users\Joshua Diaz\Projects\Lucia\NewGame2020\NewGame2020\Temp\UnityTempFile-05353d3f2e2b29b499f129439815a26b
+    projectPath: Temp\UnityTempFile-05353d3f2e2b29b499f129439815a26b
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: NewGame2020\Temp\UnityTempFile-0e531fbbddff7244aacc755f47e426c5
+    fullPath: C:\Users\Joshua Diaz\Projects\Lucia\NewGame2020\NewGame2020\Temp\UnityTempFile-0e531fbbddff7244aacc755f47e426c5
+    projectPath: Temp\UnityTempFile-0e531fbbddff7244aacc755f47e426c5
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: NewGame2020\Temp\UnityTempFile-195a20f0142cbce4d8a448fa3d58d9a3
+    fullPath: C:\Users\Joshua Diaz\Projects\Lucia\NewGame2020\NewGame2020\Temp\UnityTempFile-195a20f0142cbce4d8a448fa3d58d9a3
+    projectPath: Temp\UnityTempFile-195a20f0142cbce4d8a448fa3d58d9a3
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: NewGame2020\Temp\UnityTempFile-2368f49e5e228124f9e25bb5b9effa30
+    fullPath: C:\Users\Joshua Diaz\Projects\Lucia\NewGame2020\NewGame2020\Temp\UnityTempFile-2368f49e5e228124f9e25bb5b9effa30
+    projectPath: Temp\UnityTempFile-2368f49e5e228124f9e25bb5b9effa30
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: NewGame2020\Temp\UnityTempFile-2c740bd028537784e97d4c376ad370b3
+    fullPath: C:\Users\Joshua Diaz\Projects\Lucia\NewGame2020\NewGame2020\Temp\UnityTempFile-2c740bd028537784e97d4c376ad370b3
+    projectPath: Temp\UnityTempFile-2c740bd028537784e97d4c376ad370b3
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: NewGame2020\Temp\UnityTempFile-30b04704ffa858246808eb35d00e830a
+    fullPath: C:\Users\Joshua Diaz\Projects\Lucia\NewGame2020\NewGame2020\Temp\UnityTempFile-30b04704ffa858246808eb35d00e830a
+    projectPath: Temp\UnityTempFile-30b04704ffa858246808eb35d00e830a
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: NewGame2020\Temp\UnityTempFile-359b86ebd0616f74ca9324d78e61b042
+    fullPath: C:\Users\Joshua Diaz\Projects\Lucia\NewGame2020\NewGame2020\Temp\UnityTempFile-359b86ebd0616f74ca9324d78e61b042
+    projectPath: Temp\UnityTempFile-359b86ebd0616f74ca9324d78e61b042
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: NewGame2020\Temp\UnityTempFile-37bc4c85ed9c3c9489b1059dbedca23c
+    fullPath: C:\Users\Joshua Diaz\Projects\Lucia\NewGame2020\NewGame2020\Temp\UnityTempFile-37bc4c85ed9c3c9489b1059dbedca23c
+    projectPath: Temp\UnityTempFile-37bc4c85ed9c3c9489b1059dbedca23c
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: NewGame2020\Temp\UnityTempFile-3bfa869624d2de2418dd881294b72ac4
+    fullPath: C:\Users\Joshua Diaz\Projects\Lucia\NewGame2020\NewGame2020\Temp\UnityTempFile-3bfa869624d2de2418dd881294b72ac4
+    projectPath: Temp\UnityTempFile-3bfa869624d2de2418dd881294b72ac4
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: NewGame2020\Temp\UnityTempFile-4051390fe23bd9d46ada0bf3d5775893
+    fullPath: C:\Users\Joshua Diaz\Projects\Lucia\NewGame2020\NewGame2020\Temp\UnityTempFile-4051390fe23bd9d46ada0bf3d5775893
+    projectPath: Temp\UnityTempFile-4051390fe23bd9d46ada0bf3d5775893
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: NewGame2020\Temp\UnityTempFile-407495ea71709f0429e7ff95062b4017
+    fullPath: C:\Users\Joshua Diaz\Projects\Lucia\NewGame2020\NewGame2020\Temp\UnityTempFile-407495ea71709f0429e7ff95062b4017
+    projectPath: Temp\UnityTempFile-407495ea71709f0429e7ff95062b4017
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: NewGame2020\Temp\UnityTempFile-42a04c03779225547be9977dc7d00e62
+    fullPath: C:\Users\Joshua Diaz\Projects\Lucia\NewGame2020\NewGame2020\Temp\UnityTempFile-42a04c03779225547be9977dc7d00e62
+    projectPath: Temp\UnityTempFile-42a04c03779225547be9977dc7d00e62
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: NewGame2020\Temp\UnityTempFile-4686330d2bc871e479dcc64a1555171e
+    fullPath: C:\Users\Joshua Diaz\Projects\Lucia\NewGame2020\NewGame2020\Temp\UnityTempFile-4686330d2bc871e479dcc64a1555171e
+    projectPath: Temp\UnityTempFile-4686330d2bc871e479dcc64a1555171e
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: NewGame2020\Temp\UnityTempFile-46f527f53bb150b47a3fcb61f4a3c83d
+    fullPath: C:\Users\Joshua Diaz\Projects\Lucia\NewGame2020\NewGame2020\Temp\UnityTempFile-46f527f53bb150b47a3fcb61f4a3c83d
+    projectPath: Temp\UnityTempFile-46f527f53bb150b47a3fcb61f4a3c83d
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: NewGame2020\Temp\UnityTempFile-6127978e9e7b0224aa8b70aca2ad7d8e
+    fullPath: C:\Users\Joshua Diaz\Projects\Lucia\NewGame2020\NewGame2020\Temp\UnityTempFile-6127978e9e7b0224aa8b70aca2ad7d8e
+    projectPath: Temp\UnityTempFile-6127978e9e7b0224aa8b70aca2ad7d8e
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: NewGame2020\Temp\UnityTempFile-63b1e7810ab099e45b005c127fcbb999
+    fullPath: C:\Users\Joshua Diaz\Projects\Lucia\NewGame2020\NewGame2020\Temp\UnityTempFile-63b1e7810ab099e45b005c127fcbb999
+    projectPath: Temp\UnityTempFile-63b1e7810ab099e45b005c127fcbb999
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: NewGame2020\Temp\UnityTempFile-674afb546b8c11f418136906c4c3994a
+    fullPath: C:\Users\Joshua Diaz\Projects\Lucia\NewGame2020\NewGame2020\Temp\UnityTempFile-674afb546b8c11f418136906c4c3994a
+    projectPath: Temp\UnityTempFile-674afb546b8c11f418136906c4c3994a
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: NewGame2020\Temp\UnityTempFile-687f828b563cff246af0c00060af20bd
+    fullPath: C:\Users\Joshua Diaz\Projects\Lucia\NewGame2020\NewGame2020\Temp\UnityTempFile-687f828b563cff246af0c00060af20bd
+    projectPath: Temp\UnityTempFile-687f828b563cff246af0c00060af20bd
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: NewGame2020\Temp\UnityTempFile-8877e3cfac25db945b1d9978b2c33beb
+    fullPath: C:\Users\Joshua Diaz\Projects\Lucia\NewGame2020\NewGame2020\Temp\UnityTempFile-8877e3cfac25db945b1d9978b2c33beb
+    projectPath: Temp\UnityTempFile-8877e3cfac25db945b1d9978b2c33beb
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: NewGame2020\Temp\UnityTempFile-9098767c8845a15448ada1b08ba7738a
+    fullPath: C:\Users\Joshua Diaz\Projects\Lucia\NewGame2020\NewGame2020\Temp\UnityTempFile-9098767c8845a15448ada1b08ba7738a
+    projectPath: Temp\UnityTempFile-9098767c8845a15448ada1b08ba7738a
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: NewGame2020\Temp\UnityTempFile-a5524d774d1432b4f8559c839420c03e
+    fullPath: C:\Users\Joshua Diaz\Projects\Lucia\NewGame2020\NewGame2020\Temp\UnityTempFile-a5524d774d1432b4f8559c839420c03e
+    projectPath: Temp\UnityTempFile-a5524d774d1432b4f8559c839420c03e
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: NewGame2020\Temp\UnityTempFile-a7e793fa99abae14984d1eac94123837
+    fullPath: C:\Users\Joshua Diaz\Projects\Lucia\NewGame2020\NewGame2020\Temp\UnityTempFile-a7e793fa99abae14984d1eac94123837
+    projectPath: Temp\UnityTempFile-a7e793fa99abae14984d1eac94123837
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: NewGame2020\Temp\UnityTempFile-b2b48a9426c3a09438e05dc72f86954c
+    fullPath: C:\Users\Joshua Diaz\Projects\Lucia\NewGame2020\NewGame2020\Temp\UnityTempFile-b2b48a9426c3a09438e05dc72f86954c
+    projectPath: Temp\UnityTempFile-b2b48a9426c3a09438e05dc72f86954c
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: NewGame2020\Temp\UnityTempFile-c7d63c6bfe79afc40b090e1e6653838f
+    fullPath: C:\Users\Joshua Diaz\Projects\Lucia\NewGame2020\NewGame2020\Temp\UnityTempFile-c7d63c6bfe79afc40b090e1e6653838f
+    projectPath: Temp\UnityTempFile-c7d63c6bfe79afc40b090e1e6653838f
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: NewGame2020\Temp\UnityTempFile-c9083bafb417a00428a5bfa0fcd9936a
+    fullPath: C:\Users\Joshua Diaz\Projects\Lucia\NewGame2020\NewGame2020\Temp\UnityTempFile-c9083bafb417a00428a5bfa0fcd9936a
+    projectPath: Temp\UnityTempFile-c9083bafb417a00428a5bfa0fcd9936a
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: NewGame2020\Temp\UnityTempFile-c9d2fbd5092771545969e2c656bbb93c
+    fullPath: C:\Users\Joshua Diaz\Projects\Lucia\NewGame2020\NewGame2020\Temp\UnityTempFile-c9d2fbd5092771545969e2c656bbb93c
+    projectPath: Temp\UnityTempFile-c9d2fbd5092771545969e2c656bbb93c
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: NewGame2020\Temp\UnityTempFile-d8206084110d8914480652726b3b8973
+    fullPath: C:\Users\Joshua Diaz\Projects\Lucia\NewGame2020\NewGame2020\Temp\UnityTempFile-d8206084110d8914480652726b3b8973
+    projectPath: Temp\UnityTempFile-d8206084110d8914480652726b3b8973
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: NewGame2020\Temp\UnityTempFile-db673f8105c53a840b0fb120d6db57ea
+    fullPath: C:\Users\Joshua Diaz\Projects\Lucia\NewGame2020\NewGame2020\Temp\UnityTempFile-db673f8105c53a840b0fb120d6db57ea
+    projectPath: Temp\UnityTempFile-db673f8105c53a840b0fb120d6db57ea
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: NewGame2020\Temp\UnityTempFile-dbc6e8ff3fcfc0f4187962828a923481
+    fullPath: C:\Users\Joshua Diaz\Projects\Lucia\NewGame2020\NewGame2020\Temp\UnityTempFile-dbc6e8ff3fcfc0f4187962828a923481
+    projectPath: Temp\UnityTempFile-dbc6e8ff3fcfc0f4187962828a923481
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: NewGame2020\Temp\UnityTempFile-dffc2d12ce17ec540a10111523b65ecd
+    fullPath: C:\Users\Joshua Diaz\Projects\Lucia\NewGame2020\NewGame2020\Temp\UnityTempFile-dffc2d12ce17ec540a10111523b65ecd
+    projectPath: Temp\UnityTempFile-dffc2d12ce17ec540a10111523b65ecd
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: NewGame2020\Temp\UnityTempFile-e13aac8a524757643ade37cc59076c17
+    fullPath: C:\Users\Joshua Diaz\Projects\Lucia\NewGame2020\NewGame2020\Temp\UnityTempFile-e13aac8a524757643ade37cc59076c17
+    projectPath: Temp\UnityTempFile-e13aac8a524757643ade37cc59076c17
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: NewGame2020\Temp\UnityTempFile-f9948615a0efb114cb8fb5a597dd5a03
+    fullPath: C:\Users\Joshua Diaz\Projects\Lucia\NewGame2020\NewGame2020\Temp\UnityTempFile-f9948615a0efb114cb8fb5a597dd5a03
+    projectPath: Temp\UnityTempFile-f9948615a0efb114cb8fb5a597dd5a03
     originalPath: 
     indexStatus: 1
     workTreeStatus: 1

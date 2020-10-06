@@ -30,6 +30,7 @@ public class TacoRunnerGameManager : GeneralMinigameController
     private float obstacleSpeed;
     [Range(0,100)][SerializeField] private float obstacleIngredientProbability;
     [SerializeField] private float obstacleVerticalSpacing;
+    [SerializeField] private float jumpOnBeatOffset; // off set to obstacle speed so player can always tap on beat and land on the obstacle
     // List of all obstacle prefabs
     [SerializeField] private float obstacleSpawnX; // x-coord that obstacles spawn at
     [SerializeField] private GameObject obstaclePrefab;
@@ -93,7 +94,7 @@ public class TacoRunnerGameManager : GeneralMinigameController
     private void Awake() {
         instance = this;
         spb = 60.0f/bpm;
-        obstacleSpeed = (obstacleSpawnX - tacoPlayer.getX())/(travelBeats*spb);
+        obstacleSpeed = (obstacleSpawnX - tacoPlayer.getX() - jumpOnBeatOffset)/(travelBeats*spb);
         beatCount = 0;
         measureCount = 0;
         waiting = false;
@@ -108,12 +109,10 @@ public class TacoRunnerGameManager : GeneralMinigameController
         }
     }
 
-    GameObject c;
+
     void Start()
     {
         base.Start();
-        c = GameObject.Find("camera prefab");
-        c.SetActive(false);
         AudioManager.PlaySound("Background");
         tacoPlayer.Init();
 
@@ -128,9 +127,8 @@ public class TacoRunnerGameManager : GeneralMinigameController
             if(!waiting) {
                 StartCoroutine(CountBeat(spb));
             }
-            if(score >= 5 || measureCount >= measureAndBeat2Obstacle.Length - 1) {
+            if(score >= 20 || measureCount >= measureAndBeat2Obstacle.Length - 1) {
                 EndMinigame();
-                c.SetActive(true);
             }
         }
     }

@@ -370,7 +370,7 @@ Camera:
   m_GameObject: {fileID: 216092312}
   m_Enabled: 1
   serializedVersion: 2
-  m_ClearFlags: 1
+  m_ClearFlags: 4
   m_BackGroundColor: {r: 0.19215687, g: 0.3019608, b: 0.4745098, a: 0}
   m_projectionMatrixMode: 1
   m_GateFitMode: 2
@@ -574,8 +574,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   canvasTransform: {fileID: 1230959273}
-  moveSpeed: 7
-  scaleSpeed: 25
+  moveSpeed: 12
+  scaleSpeed: 14
   canvas: {fileID: 223376579540143682}
   tacoPlayer: {fileID: 68249569}
   scoreText: {fileID: 1794335620}
@@ -591,6 +591,7 @@ MonoBehaviour:
   travelBeats: 3
   obstacleIngredientProbability: 30
   obstacleVerticalSpacing: 125
+  jumpOnBeatOffset: 20
   obstacleSpawnX: 650
   obstaclePrefab: {fileID: 3828284603572879514, guid: ff6ad35eb49df0144bf40881002a7f99,
     type: 3}

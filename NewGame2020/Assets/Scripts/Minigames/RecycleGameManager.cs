@@ -73,7 +73,7 @@ public class RecycleGameManager : GeneralMinigameController
 #region Scoring
 
     /* Track the note by adding it to the clickable notes array 
-     * Currently, only one note will be tracked per lane at any time.
+     * Only one note will be tracked per lane at any time.
        This will be the last note to enter the button's collider*/
     public void TrackNote(NoteObject n)
     {
